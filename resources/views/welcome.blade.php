@@ -28,12 +28,13 @@
             </div>
 
             <div class="w-full flex flex-col items-center gap-3">
-                <div class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
+                <div
+                    class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
                     <div class="flex items-center gap-5">
                         <img src="works/nortada.png" alt="Nortada de Sabores" class="w-[60px]">
 
                         <div>
-                            <h1>Nortada de Sabores</h1>
+                            <h1 class="text-white">Nortada de Sabores</h1>
                             <p class="text-neutral-400 mb-2">Restaurant with booking and fully managed by
                                 staff.</p>
                         </div>
@@ -47,12 +48,13 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
+                <div
+                    class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
                     <div class="flex items-center gap-5">
                         <img src="works/amaisterapia.png" alt="A + TErapia" class="w-[60px]">
 
                         <div>
-                            <h1>A + Terapia</h1>
+                            <h1 class="text-white">A + Terapia</h1>
                             <p class="text-neutral-400 mb-2">Massages clinic system with client database and outreach.
                             </p>
                         </div>
@@ -76,20 +78,21 @@
                 <div class="h-full w-full flex flex-col items-center justify-start gap-10">
                     <div
                         class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-40">
-                        <h2 class="text-start text-2xl">Age 6</h2>
+                        <h2 class="text-start text-2xl text-white">Age 6</h2>
                         <h1 class="text-start text-md text-neutral-200">First Interaction with a Computer</h1>
                     </div>
 
                     <div
                         class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-28">
-                        <h2 class="text-start text-2xl">Age 14</h2>
-                        <h1 class="text-start text-md text-neutral-200">Started Programming in Lua</h1>
+                        <h2 class="text-start text-2xl text-white">Age 14</h2>
+                        <h1 class="text-start text-md text-neutral-200">Started Programming in .Lua for FiveM</h1>
                     </div>
 
                     <div
                         class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
-                        <h2 class="text-start text-2xl">Age 16</h2>
+                        <h2 class="text-start text-2xl text-white">Age 16</h2>
                         <h1 class="text-start text-md text-neutral-200">Joined a Programming-Focused High School Course
+                            in Portugal
                         </h1>
                     </div>
                 </div>
@@ -99,7 +102,7 @@
                 <div class="h-full w-full flex flex-col items-center justify-start gap-10">
                     <div
                         class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-40">
-                        <h2 class="text-start text-2xl">Age 10</h2>
+                        <h2 class="text-start text-2xl text-white">Age 10</h2>
                         <h1 class="text-start text-md text-neutral-200">Started a Bracelet Business at School (Ended by
                             Principal)</h1>
                         <a href="/works/bracelet.jpg" target="_blank"
@@ -108,23 +111,23 @@
 
                     </div>
 
-                    <div class="w-full flex flex-col items-start justify-center gap-3 sm:gap-5 bg-neutral-800 p-5 sm:p-3 rounded-lg h-40 sm:h-60 mt-32">
-                        <h2 class="text-start text-2xl text-neutral-100">Age 15</h2>
-                        <p class="text-start text-md text-neutral-200">Team project: Built, programmed, and launched a mini satellite (CanSat Junior).</p>
+                    <div
+                        class="w-full flex flex-col items-start justify-center gap-3 sm:gap-5 bg-neutral-800 p-5 sm:p-3 rounded-lg h-40 sm:h-60 mt-32">
+                        <h2 class="text-start text-2xl text-white">Age 15</h2>
+                        <p class="text-start text-md text-neutral-200">Team project: Built, programmed, and launched a
+                            mini satellite (CanSat Junior).</p>
                         <a href="https://www.esero.pt/592/Reveja-a-Final-da-1---edi--o-do-CanSat-Jr" target="_blank"
                             class="flex items-center gap-2 px-3 py-1 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
                             aria-label="Learn more about the CanSat Junior project">Learn More</a>
-                    </div>                    
+                    </div>
 
-                    <a href="{{ route('login') }}">
-                        <div
-                            class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
-                            <h2 class="text-start text-2xl">Age 18</h2>
-                            <h1 class="text-start text-md text-neutral-200">Graduated High School with Highest
-                                Distinction
-                                (PAT)</h1>
-                        </div>
-                    </a>
+                    <div
+                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
+                        <h2 class="text-start text-2xl text-white">Age 18</h2>
+                        <h1 class="text-start text-md text-neutral-200">Graduated High School with Highest
+                            Distinction (20/20)
+                            (PAT)</h1>
+                    </div>
                 </div>
             </div>
         </x-container>
