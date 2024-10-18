@@ -11,9 +11,11 @@ sudo php artisan config:clear
 ```
 
 ```
-sudo chown -R daemon:daemon jpbgomes
-sudo chmod -R 775 jpbgomes/storage
-sudo chmod -R 775 jpbgomes/bootstrap/cache
+sudo chown -R daemon:daemon /var/www/jpbgomes
+sudo chown -R www-data:www-data /var/www/jpbgomes/storage
+sudo chown -R www-data:www-data /var/www/jpbgomes/bootstrap/cache
+sudo chmod -R 775 /var/www/jpbgomes/storage
+sudo chmod -R 775 /var/www/jpbgomes/bootstrap/cache
 ```
 
 ```
