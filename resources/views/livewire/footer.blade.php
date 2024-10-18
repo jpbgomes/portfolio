@@ -9,8 +9,7 @@
                     <div class="flex flex-col items-center justify-center gap-2">
                         <h1 class="font-bold text-xl text-white">NEWSLETTER</h1>
                         <h2 class="text-neutral-300">Keep up with all my <strong>updates</strong>,
-                            <strong>discounts</strong> and <strong>campains</strong>, <strong>new services</strong> and
-                            <strong>new projects</strong>.
+                            <strong>campains</strong>, <strong>new services projects</strong>.
                         </h2>
                     </div>
 
@@ -38,10 +37,6 @@
                 </div>
             </div>
         </x-container>
-
-        <a href="https://joaonm.com/" class="absolute left-5 bottom-1 hidden sm:flex">
-            <h1 class="mb-3 text-neutral-500 text-[10px]">Design inspired in JoãoNM</h1>
-        </a>
 
         <x-container class="flex flex-col items-center justify-center">
             <a href="{{ route('dashboard') }}">

@@ -29,6 +29,28 @@ User jpbgomes
 IdentityFile ~/.ssh/rpi_key
 ```
 
+## Install UFW
+```
+sudo apt update
+sudo apt install ufw
+```
+
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+```
+
+```
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw allow from 192.168.1.0/24 to any port 22
+```
+
+```
+sudo ufw enable
+sudo ufw status verbose
+```
+
 ## Install PHP
 ```
 sudo apt update
@@ -120,8 +142,6 @@ sudo crontab -e
 
 ```
 0 2 * * * php /var/www/jpbgomes/artisan backup:database >> /dev/null 2>&1
-0 2 * * * php /var/www/amaisterapia/artisan backup:database >> /dev/null 2>&1
-0 2 * * * php /var/www/nortada/artisan backup:database >> /dev/null 2>&1
 ```
 
 ```

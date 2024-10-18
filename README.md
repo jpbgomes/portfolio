@@ -27,3 +27,4 @@ sudo php artisan migrate:fresh --seed
 ```
 
 - [VPS SETUP](VPS.MD)
+- [OTHER SETUPS](OTHER.MD)
