@@ -2,7 +2,7 @@
     <x-full-container class="overflow-y-visible pt-10">
         <x-container class="flex flex-col items-center">
             <x-title>a <span class="text-white">developer</span> who works to get the <span class="text-white">best out of
-                    people.</span></h1></x-title>
+                    people.</span></x-title>
 
             <x-cbutton class="bg-white my-14 text-sm font-medium" href="mailto:josepedrogomes27@gmail.com">Reach
                 Out</x-cbutton>
@@ -11,19 +11,19 @@
                 <a target="_blank"
                     class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-lightblack text-white rounded-xl text-sm"
                     href="https://github.com/jpbgomes">
-                    <img src="logos/github.png" alt="" class="w-6 h-6">@jpbgomes
+                    <img src="socials/github.png" alt="" class="w-6 h-6">@jpbgomes
                 </a>
 
                 <a target="_blank"
                     class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-lightblack text-white rounded-xl text-sm"
                     href="https://www.linkedin.com/in/jpbgomes">
-                    <img src="logos/linkedin.png" alt="" class="w-6 h-6">@jpbgomes
+                    <img src="socials/linkedin.png" alt="" class="w-6 h-6">@jpbgomes
                 </a>
 
                 <a target="_blank"
                     class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-lightblack text-white rounded-xl text-sm"
                     href="https://www.youtube.com/@jpbgomes">
-                    <img src="logos/youtube.png" alt="" class="w-6 h-6">@jpbgomes
+                    <img src="socials/youtube.png" alt="" class="w-6 h-6">@jpbgomes
                 </a>
             </div>
 
@@ -51,7 +51,7 @@
                 <div
                     class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
                     <div class="flex items-center gap-5">
-                        <img src="works/amaisterapia.png" alt="A + TErapia" class="w-[60px]">
+                        <img src="works/amaisterapia.png" alt="A + Terapia" class="w-[60px]">
 
                         <div>
                             <h1 class="text-white">A + Terapia</h1>
@@ -65,6 +65,46 @@
                             class="flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
                             href="https://amaisterapia.com" target="_blank">Check it out
                             <i class="fa-solid fa-spa"></i></x-cbutton>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
+                    <div class="flex items-center gap-5">
+                        <img src="works/norticolor.png" alt="Norticolor" class="w-[60px]">
+
+                        <div>
+                            <h1 class="text-white">Norticolor</h1>
+                            <p class="text-neutral-400 mb-2">Photography Studio landing page.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <x-cbutton
+                            class="flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
+                            href="https://norticolor.com" target="_blank">See Albuns
+                            <i class="fa-solid fa-camera"></i></x-cbutton>
+                    </div>
+                </div>
+
+                <div
+                    class="w-full bg-lightblack flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-10 p-3 rounded-lg">
+                    <div class="flex items-center gap-5">
+                        <img src="works/skypeople.png" alt="Sky People" class="w-[60px]">
+
+                        <div>
+                            <h1 class="text-white">Sky People</h1>
+                            <p class="text-neutral-400 mb-2">Mobile Telecom landing page for convertions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <x-cbutton
+                            class="flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
+                            href="https://skypeople.pt" target="_blank">Explore Areas
+                            <i class="fa-solid fa-wifi"></i></x-cbutton>
                     </div>
                 </div>
             </div>
@@ -131,5 +171,43 @@
                 </div>
             </div>
         </x-container>
+
+        <x-container class="flex flex-col items-center mt-40 mb-10 sm:mb-40">
+            <x-title>my <span class="text-white">secrect formula </span>for <span class="text-white">web and
+                    mobile</span> development</x-title>
+
+            <div class="flex flex-col justify-between items-start gap-10 mt-20">
+                <div class="w-full">
+                    <img src="others/formula.png" alt="My Development Formula" class="w-full rounded-lg">
+                </div>
+
+                <div class="w-full flex flex-col sm:flex-row gap-8 text-white">
+                    <div class="bg-neutral-800 w-full flex flex-col gap-4 p-4 rounded-xl">
+                        <h1 class="text-xl font-semibold text-center">Why Laravel and TailwindCSS?</h1>
+                        <p class="text-neutral-400 text-center">
+                            Laravel allows me to mix the back and front-end in a simple way, plus the TailwindCSS makes
+                            everything super intuitive and practic to style!
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral-800 w-full flex flex-col gap-4 p-4 rounded-xl">
+                        <h1 class="text-xl font-semibold text-center">Why MariaDB for the Database?</h1>
+                        <p class="text-neutral-400 text-center">
+                            I choose MariaDB for its scalability, security features and simplicity. Sometimes the
+                            simplest in the best!
+                        </p>
+                    </div>
+
+                    <div class="bg-neutral-800 w-full flex flex-col gap-4 p-4 rounded-xl">
+                        <h1 class="text-xl font-semibold text-center">Why React Native and RestAPI?</h1>
+                        <p class="text-neutral-400 text-center">
+                            Whenever needed I can setup my Laravel Restfull API and use React Native to extend my web to
+                            mobile development, works great for me!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </x-container>
+
     </x-full-container>
 </x-app-layout>
