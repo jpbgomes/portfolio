@@ -141,7 +141,8 @@ sudo crontab -e
 ```
 
 ```
-0 2 * * * php /var/www/jpbgomes/artisan backup:database >> /dev/null 2>&1
+0 4 * * * php /var/www/jpbgomes/artisan backup:database >> /dev/null 2>&1
+0 4 * * * sudo certbot renew >> /var/log/certbot-renew.log 2>&1
 ```
 
 ```
