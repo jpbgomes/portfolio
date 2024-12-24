@@ -5,11 +5,10 @@
                 <i
                     class="fa-solid fa-envelope-open-text scale-[3] bg-lightblack text-white border border-white rounded-full p-1"></i>
 
-                <div class="mt-10 flex flex-col items-center justify-center gap-5">
+                <div class="w-[95%] mt-10 flex flex-col items-center justify-center gap-5">
                     <div class="flex flex-col items-center justify-center gap-2">
                         <h1 class="font-bold text-xl text-white">NEWSLETTER</h1>
-                        <h2 class="text-neutral-300">Keep up with all my <strong>updates</strong>,
-                            <strong>campains</strong>, <strong>new services projects</strong>.
+                        <h2 class="text-neutral-300">Keep up with all my <strong>new services and projects</strong>.
                         </h2>
                     </div>
 

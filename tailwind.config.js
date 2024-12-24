@@ -13,6 +13,11 @@ export default {
 
     theme: {
         extend: {
+            screens: {
+                'tel': { 'max': '639px' },
+                // => @media (min-width: 640px) { ... }
+            },
+            
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans],
             },
