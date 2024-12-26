@@ -45,6 +45,7 @@ sudo chmod +x cloudflare-ip.sh
 ./cloudflare.sh
 
 crontab -e
-*/1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater
+*/1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater/cloudflare.sh
+*/1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater/cloudflare-ip.sh
 sudo systemctl restart cron
 ```
