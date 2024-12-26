@@ -31,3 +31,20 @@ sudo ufw allow 32400
 ```
 http://jpbgomes.ddns.net:32400/web
 ```
+
+## Configure DDNS Using Cloudflare
+
+```
+git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git
+
+sudo cp cloudflare-template.sh cloudflare.sh
+sudo cp cloudflare-template.sh cloudflare-ip.sh
+
+sudo chmod +x cloudflare.sh
+sudo chmod +x cloudflare-ip.sh
+./cloudflare.sh
+
+crontab -e
+*/1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater
+sudo systemctl restart cron
+```
