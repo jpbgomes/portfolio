@@ -38,14 +38,11 @@ http://jpbgomes.ddns.net:32400/web
 git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git
 
 sudo cp cloudflare-template.sh cloudflare.sh
-sudo cp cloudflare-template.sh cloudflare-ip.sh
 
 sudo chmod +x cloudflare.sh
-sudo chmod +x cloudflare-ip.sh
 ./cloudflare.sh
 
 crontab -e
 */1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater/cloudflare.sh
-*/1 * * * * /bin/bash /home/jpbgomes/Downloads/cloudflare-ddns-updater/cloudflare-ip.sh
 sudo systemctl restart cron
 ```
