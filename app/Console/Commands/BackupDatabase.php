@@ -48,7 +48,7 @@ class BackupDatabase extends Command
 
         Mail::raw("Database backup file '{$databaseName}' attached", function ($message) use ($backupPath, $timestamp) {
             $message->to('josepedrogomes27@gmail.com')
-                ->subject("SQL Backup / {$timestamp}")
+                ->subject("Roleplay SQL Backup / {$timestamp}")
                 ->attach($backupPath);
         });
 

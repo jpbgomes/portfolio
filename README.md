@@ -25,6 +25,3 @@ sudo npm run build
 sudo php artisan migrate
 sudo php artisan migrate:fresh --seed
 ```
-
-- [VPS SETUP](VPS.MD)
-- [OTHER SETUPS](OTHER.MD)
