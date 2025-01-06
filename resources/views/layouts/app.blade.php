@@ -66,8 +66,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body id="body" class="font-sans antialiased bg-newblack px-5 md:px-0"
-    @if (config('app.debug') == false) onload="showSplash()" @endif>
+<body id="body" class="font-sans antialiased bg-newblack px-5 md:px-0">
+{{-- <body id="body" class="font-sans antialiased bg-newblack px-5 md:px-0" @if (config('app.debug') == false) onload="showSplash()" @endif> --}}
     @if (config('app.debug') == false)
         <div id="splash"
             class="w-screen h-screen absolute bg-newblack text-white flex items-center justify-center overflow-hidden z-50">

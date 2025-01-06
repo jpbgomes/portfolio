@@ -15,7 +15,6 @@ export default {
         extend: {
             screens: {
                 'tel': { 'max': '639px' },
-                // => @media (min-width: 640px) { ... }
             },
             
             fontFamily: {

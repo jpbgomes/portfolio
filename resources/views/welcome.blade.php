@@ -245,12 +245,12 @@
         </x-container>
 
         <x-container class="flex flex-col items-center mt-52 mb-10 sm:mb-20">
-            <x-title>Explore <span class="text-white">my projects</span> and the <span class="text-white">technologies</span> I’ve mastered</x-title>
+            <x-title>Explore <span class="text-white">my projects</span> and the <span class="text-white">technologies</span> I’m mastering</x-title>
         
             <div class="flex flex-col justify-between items-start gap-10 mt-20">
                 <div class="w-full flex flex-col sm:flex-row gap-8 text-white">
                     <div class="bg-neutral-800 w-full flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                        <img src="techs/raspberry.png" alt="Raspberry PI" class="w-1/2 sm:w-full">
+                        <img src="techs/raspberry.png" alt="Raspberry PI" class="w-1/2">
         
                         <h1 class="text-xl font-semibold text-center">Raspberry Pi 5: A Multi-Functional Setup</h1>
                         <p class="text-neutral-400 text-center">
@@ -259,7 +259,7 @@
                     </div>
         
                     <div class="bg-neutral-800 w-full flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                        <img src="techs/fivem.png" alt="FiveM" class="w-1/2 sm:w-full">
+                        <img src="techs/fivem.png" alt="FiveM" class="w-1/2">
         
                         <h1 class="text-xl font-semibold text-center">FiveM Server: Customized Gaming Experience</h1>
                         <p class="text-neutral-400 text-center">
@@ -268,11 +268,11 @@
                     </div>
         
                     <div class="bg-neutral-800 w-full flex flex-col items-center justify-center gap-4 p-4 rounded-xl">
-                        <img src="techs/monero.png" alt="Monero" class="w-1/2 sm:w-full">
+                        <img src="techs/monero.png" alt="Monero" class="w-1/2">
         
                         <h1 class="text-xl font-semibold text-center">Monero Shop: Secure E-Commerce Platform</h1>
                         <p class="text-neutral-400 text-center">
-                            Built an open-source Monero-based online store, emphasizing privacy and security.
+                            Building an open-source Monero-based online store, emphasizing privacy and security.
                         </p>
                     </div>
                 </div>
