@@ -229,7 +229,7 @@
                         <h1 class="text-xl font-semibold text-center">Why MariaDB for the Database?</h1>
                         <p class="text-neutral-400 text-center">
                             I choose MariaDB for its scalability, security features and simplicity. Sometimes the
-                            simplest in the best!
+                            simplest is the best!
                         </p>
                     </div>
 
