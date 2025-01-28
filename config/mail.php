@@ -36,6 +36,7 @@ return [
     */
 
     'mailers' => [
+        'backup' => env('MAIL_FOR_BACKUP'),
 
         'smtp' => [
             'transport' => 'smtp',

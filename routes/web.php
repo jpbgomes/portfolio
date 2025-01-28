@@ -12,6 +12,9 @@ Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/email', function () {
+    return config('mail.backup_email', env('MAIL_FOR_BACKUP'));
+});
 
 Route::middleware([
     'auth:sanctum',

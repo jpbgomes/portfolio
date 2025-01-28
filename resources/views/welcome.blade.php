@@ -4,8 +4,7 @@
             <x-title>a <span class="text-white">developer</span> who works to get the <span class="text-white">best out of
                     people.</span></x-title>
 
-            <x-cbutton class="bg-white my-14 text-sm font-medium" href="mailto:josepedrogomes27@gmail.com">Reach
-                Out</x-cbutton>
+            <x-cbutton class="bg-white my-14 text-sm font-medium" href="mailto:{{ env('MAIL_FOR_BACKUP') }}">Reach Out</x-cbutton>
 
             <div class="flex flex-wrap items-center justify-center gap-5 mb-14">
                 <a target="_blank"
