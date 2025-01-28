@@ -46,11 +46,12 @@ class BackupDatabase extends Command
             return;
         }
 
-        Mail::raw("Database backup file '{$databaseName}' attached", function ($message) use ($backupPath, $timestamp) {
+        $appName = config('app.name');        
+        Mail::raw("'{$appName}' Database backup file '{$databaseName}' attached", function ($message) use ($appName, $backupPath, $timestamp) {
             $message->to(config('mail.mailers.backup'))
-                ->subject("SQL Backup / {$timestamp}")
+                ->subject("'{$appName}' SQL Backup / {$timestamp}")
                 ->attach($backupPath);
-        });
+        });   
 
         $this->info('Database backup created and emailed successfully.');
 

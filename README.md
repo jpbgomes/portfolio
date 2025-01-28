@@ -26,5 +26,12 @@ sudo php artisan migrate
 sudo php artisan migrate:fresh --seed
 ```
 
+```
+CREATE USER 'jpbgomes'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON *.* TO 'jpbgomes'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
+```
+
 - [VPS SETUP](VPS.MD)
 - [OTHER SETUPS](OTHER.MD)
