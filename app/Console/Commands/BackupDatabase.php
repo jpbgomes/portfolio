@@ -47,7 +47,7 @@ class BackupDatabase extends Command
         }
 
         Mail::raw("Database backup file '{$databaseName}' attached", function ($message) use ($backupPath, $timestamp) {
-            $message->to('josepedrogomes27@gmail.com')
+            $message->to(config('mail.mailers.backup'))
                 ->subject("SQL Backup / {$timestamp}")
                 ->attach($backupPath);
         });
