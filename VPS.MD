@@ -132,6 +132,7 @@ sudo apt install certbot python3-certbot-apache
 
 ```
 sudo certbot --apache -d jpbgomes.com -d www.jpbgomes.com
+sudo certbot renew --dry-run
 ```
 
 ## Configure Crontab
