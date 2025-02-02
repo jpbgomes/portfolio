@@ -19,6 +19,13 @@ sudo chmod -R 775 /var/www/jpbgomes/bootstrap/cache
 ```
 
 ```
+sudo chmod +x /home/jpbgomes
+sudo chmod +x /home/jpbgomes/Desktop
+sudo chmod -R 755 /home/jpbgomes/Desktop/jpbgomes
+sudo chown -R www-data:www-data /home/jpbgomes/Desktop/jpbgomes
+```
+
+```
 sudo composer update
 sudo npm install
 sudo npm run build
