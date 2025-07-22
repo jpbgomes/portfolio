@@ -399,6 +399,10 @@
 
 <script>
     readed = [
+        { name: "Hábitos Atómicos", image: "habits.jpg", author: "James Clear" },
+        { name: "A Arte Subtil De Saber Dizer Que Se Foda", image: "artsubtil.jpg", author: "Mark Manson" },
+        { name: "Como Fazer Amigos E Influenciar Pessoas", image: "howtofriends.jpg", author: "Dale Carnegie" },
+
         { name: "12 Regras Para A Vida", image: "12rule.jpg", author: "Jordan B Peterson" },
         { name: "As 33 Estratégias De Guerra", image: "33war.jpg", author: "Robert Greene" },
         { name: "The 48 Laws Of Power", image: "48laws.jpg", author: "Robert Greene" },
@@ -421,7 +425,7 @@
 
     readed.forEach(readBook => {
         const card = document.createElement("div");
-        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-40 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
+        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-32 sm:w-40 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
 
         card.innerHTML = `
             <img src="assets/books/${readBook.image}" alt="${readBook.name}" class="w-full h-full rounded-md object-cover">
@@ -434,7 +438,7 @@
 
     going.forEach(goingBook => {
         const card = document.createElement("div");
-        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-40 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
+        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-32 sm:w-40 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
 
         card.innerHTML = `
             <img src="assets/books/${goingBook.image}" alt="${goingBook.name}" class="w-full h-full rounded-md object-cover">
