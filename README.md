@@ -20,6 +20,9 @@ sudo apt install php8.4-common php8.4-cli php8.4-opcache php8.4-mysql php8.4-xml
 ```
 
 ## Install Composer
+```
+https://getcomposer.org/download/
+```
 
 ## Install NodeJS e NPM
 ```
@@ -76,18 +79,18 @@ backend = systemd
 sudo systemctl restart fail2ban
 ```
 
-### See Status / Banned IP´s
+- ### See Status / Banned IP´s
 ```bash
 cat  /var/log/fail2ban.log
 sudo fail2ban-client status sshd
 ```
 
-### Unban a Specific IP
+- ### Unban a Specific IP
 ```bash
 sudo fail2ban-client set sshd unbanip <IP_ADDRESS>
 ```
 
-### Ban a Specific IP
+- ### Ban a Specific IP
 ```bash
 sudo fail2ban-client set sshd banip <IP_ADDRESS>
 ```
