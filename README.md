@@ -44,9 +44,55 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## Pi-hole Docker Installation
+## Install Fail2ban
 
-### 1. Install Docker and Docker Compose
+```bash
+sudo apt install fail2ban -y
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+sudo systemctl status fail2ban
+```
+
+```bash
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+sudo nano /etc/fail2ban/jail.local
+```
+
+```
+[sshd]
+
+# To use more aggressive sshd modes set filter parameter "mode" in jail.local:
+# normal (default), ddos, extra or aggressive (combines all).
+# See "tests/files/logs/sshd" or "filter.d/sshd.conf" for usage example and details.
+#mode   = normal
+enabled = true
+port    = ssh
+logpath = %(sshd_log)s
+#backend = %(sshd_backend)s
+backend = systemd
+```
+
+```bash
+sudo systemctl restart fail2ban
+```
+
+### See Status / Banned IP´s
+```bash
+cat  /var/log/fail2ban.log
+sudo fail2ban-client status sshd
+```
+
+### Unban a Specific IP
+```bash
+sudo fail2ban-client set sshd unbanip <IP_ADDRESS>
+```
+
+### Ban a Specific IP
+```bash
+sudo fail2ban-client set sshd banip <IP_ADDRESS>
+```
+
+## Install Pi-hole via Docker
 
 ```bash
 curl -sSL https://get.docker.com | sh
@@ -54,14 +100,10 @@ sudo usermod -aG docker $USER
 # Logout or reboot to apply group changes
 ```
 
-### 2. Create Pi-hole working directory
-
 ```bash
 mkdir -p ~/Pihole
 cd ~/Pihole
 ```
-
-### 3. Create `docker-compose.yml`
 
 ```yaml
 version: '3'
@@ -85,14 +127,10 @@ services:
     restart: unless-stopped
 ```
 
-### 4. Start Pi-hole
-
 ```bash
 cd ~/Pihole
 docker compose up -d
 ```
-
-### 5. Open Firewall Ports
 
 ```bash
 sudo ufw allow 53
