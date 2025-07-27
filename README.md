@@ -5,6 +5,21 @@
 sudo apt-get update && sudo apt-get upgrade
 ```
 
+## Change Swap Value
+```
+sudo dphys-swapfile swapoff
+sudo nano /etc/dphys-swapfile
+```
+
+```
+CONF_SWAPSIZE=2048
+```
+
+```
+sudo dphys-swapfile setup
+sudo dphys-swapfile swapon
+```
+
 ## Install Git
 ```
 sudo apt-get install git
