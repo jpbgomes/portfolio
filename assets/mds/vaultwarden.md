@@ -97,3 +97,79 @@ sudo systemctl reload apache2
 sudo apt install -y certbot python3-certbot-apache
 sudo certbot --apache -d vault.jpbgomes.com
 ```
+
+# AUTOMATING BACKUPS
+```bash
+nano backup-vaultwarden.sh
+```
+
+```bash
+#!/bin/bash
+
+# Set paths
+VAULTWARDEN_DIR="$HOME/vaultwarden"
+DATA_DIR="$VAULTWARDEN_DIR/vw-data"
+BACKUP_NAME="vaultwarden-backup-$(date +%F_%H-%M-%S).tar.gz"
+DEVICE="/dev/sda1"
+MOUNT_POINT="/media/jpbgomes/KINGSTON"
+BACKUP_DIR="$MOUNT_POINT/vault-backups"
+BACKUP_DEST="$BACKUP_DIR/$BACKUP_NAME"
+
+echo "🔄 Unmounting external disk if mounted..."
+sudo umount $MOUNT_POINT 2>/dev/null || true
+
+echo "📁 Creating mount point if it doesn't exist..."
+if [ ! -d "$MOUNT_POINT" ]; then
+    sudo mkdir -p "$MOUNT_POINT"
+    if [ $? -ne 0 ]; then
+        echo "❌ Failed to create mount point $MOUNT_POINT"
+        exit 1
+    fi
+fi
+
+echo "🔌 Mounting external disk..."
+if ! sudo mount $DEVICE $MOUNT_POINT; then
+    echo "❌ Failed to mount $DEVICE to $MOUNT_POINT"
+    exit 1
+fi
+
+echo "📁 Creating backup directory if it doesn't exist..."
+sudo mkdir -p $BACKUP_DIR
+
+echo "🔄 Stopping Vaultwarden container..."
+cd "$VAULTWARDEN_DIR" || exit 1
+sudo docker-compose down
+
+echo "📦 Creating backup..."
+sudo tar -czvf "$BACKUP_DEST" -C "$VAULTWARDEN_DIR" vw-data
+
+echo "✅ Backup created at: $BACKUP_DEST"
+
+echo "🚀 Starting Vaultwarden container..."
+sudo docker-compose up -d
+
+echo "🔌 Unmounting external disk..."
+if ! sudo umount $MOUNT_POINT; then
+    echo "❌ Failed to unmount $MOUNT_POINT"
+    exit 1
+fi
+
+echo "🎉 Backup complete!"
+```
+
+```bash
+chmod +x ~/Desktop/backup-vaultwarden.sh
+bash ~/Desktop/backup-vaultwarden.sh
+```
+
+```bash
+sudo mkdir /media/jpbgomes
+sudo chown jpbgomes:jpbgomes /media/jpbgomes
+```
+
+```bash
+ls -ld /media/jpbgomes
+sudo mount /dev/sda1 /media/jpbgomes/KINGSTON
+ls -lh /media/jpbgomes/KINGSTON/vault-backups
+sudo umount /media/jpbgomes/KINGSTON
+```
