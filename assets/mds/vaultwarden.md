@@ -179,7 +179,7 @@ sudo umount /media/jpbgomes/KINGSTON
 0 2 * * * /bin/bash /home/jpbgomes/Desktop/backup-vaultwarden.sh >> /home/jpbgomes/vaultwarden-backup.log 2>&1
 ```
 
-# ALIAS FOR LS
+# ALIAS FOR CHECKING THE BACKUPS
 ```bash
 sudo nano ~/.bashrc
 ```
