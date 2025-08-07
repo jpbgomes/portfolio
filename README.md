@@ -118,6 +118,23 @@ sudo umount /media/jpbgomes/KINGSTON
 0 3 15 * * /bin/bash /home/jpbgomes/Desktop/backup-pi-full.sh >> /home/jpbgomes/pi-backup.log 2>&1
 ```
 
+# Alias For Checking the Backups
+```bash
+sudo nano ~/.bashrc
+```
+
+```bash
+alias lspi='sudo mount /dev/sda1 /media/jpbgomes/KINGSTON && ls -lh /media/jpbgomes/KINGSTON/pi-backups && sudo umount /media/jpbgomes/KINGSTON'
+```
+
+```bash
+source ~/.bashrc
+```
+
+```bash
+lspi
+```
+
 ## Others
 
 [Fail2Ban](./assets/mds/fail2ban.md)
