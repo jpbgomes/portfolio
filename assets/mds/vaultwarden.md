@@ -178,3 +178,20 @@ sudo umount /media/jpbgomes/KINGSTON
 # Daily Vaultwarden backup at 2:00 AM
 0 2 * * * /bin/bash /home/jpbgomes/Desktop/backup-vaultwarden.sh >> /home/jpbgomes/vaultwarden-backup.log 2>&1
 ```
+
+# ALIAS FOR LS
+```bash
+sudo nano ~/.bashrc
+```
+
+```bash
+alias lsvault='sudo mount /dev/sda1 /media/jpbgomes/KINGSTON && ls -lh /media/jpbgomes/KINGSTON/vault-backups && sudo umount /media/jpbgomes/KINGSTON'
+```
+
+```bash
+source ~/.bashrc
+```
+
+```bash
+lsvault
+```
