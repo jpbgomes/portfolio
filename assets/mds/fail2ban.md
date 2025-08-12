@@ -30,10 +30,27 @@ backend = systemd
 sudo systemctl restart fail2ban
 ```
 
-- # See Status / Banned IP´s
+- # SEE STATUS / BANNED IP´S
 ```bash
 cat  /var/log/fail2ban.log
 sudo fail2ban-client status sshd
+```
+
+# Alias For Checking the Status
+```bash
+sudo nano ~/.bashrc
+```
+
+```bash
+alias lsfail='cat  /var/log/fail2ban.log && sudo fail2ban-client status sshd'
+```
+
+```bash
+source ~/.bashrc
+```
+
+```bash
+lsfail
 ```
 
 - # UNBAN A SPECIFIC IP
