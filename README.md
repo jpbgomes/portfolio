@@ -1,11 +1,11 @@
 # STEP-TO-STEP FOR ESSENCIALS
 
-## Ubuntu Update and Upgrade
+## UBUNTU UPDATE AND UPGRADE
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-## Change Swap Value
+## CHANGE SWAP VALUE
 ```bash
 sudo dphys-swapfile swapoff
 sudo nano /etc/dphys-swapfile
@@ -20,12 +20,12 @@ sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 ```
 
-## Install Git
+## INSTALL GIT
 ```bash
 sudo apt-get install git
 ```
 
-## Install PHP
+## INSTALL PHP
 ```bash
 sudo add-apt-repository ppa:ondrej/php
 sudo apt policy php
@@ -34,17 +34,17 @@ sudo apt install php8.4 -y
 sudo apt install php8.4-common php8.4-cli php8.4-opcache php8.4-mysql php8.4-xml php8.4-curl php8.4-zip php8.4-mbstring php8.4-gd php8.4-intl php8.4-bcmath -y
 ```
 
-## Install Composer
+## INSTALL COMPOSER
 ```bash
 https://getcomposer.org/download/
 ```
 
-## Install NodeJS e NPM
+## INSTALL NodeJS E NPM
 ```bash
 sudo apt install -y nodejs npm
 ```
 
-## Automated Backups
+## AUTOMATED BACKUPS
 ```bash
 nano backup-pi-full.sh
 ```
@@ -82,7 +82,7 @@ echo "📁 Creating backup directory if it doesn't exist..."
 sudo mkdir -p $BACKUP_DIR
 
 echo "📦 Creating full disk backup of $SOURCE_DISK..."
-if ! sudo dd if=$SOURCE_DISK bs=4M status=progress | gzip > "$BACKUP_DEST"; then
+if ! sudo dd if=$SOURCE_DISK bs=4M status=progress | gzip | sudo tee "$BACKUP_DEST" > /dev/null; then
     echo "❌ Failed to create backup"
     sudo umount $MOUNT_POINT
     exit 1
@@ -118,7 +118,7 @@ sudo umount /media/jpbgomes/KINGSTON
 0 3 15 * * /bin/bash /home/jpbgomes/Desktop/backup-pi-full.sh >> /home/jpbgomes/pi-backup.log 2>&1
 ```
 
-# Alias For Checking the Backups
+# ALIAS FOR CHECKING THE BACKUPS
 ```bash
 sudo nano ~/.bashrc
 ```
@@ -135,7 +135,7 @@ source ~/.bashrc
 lspi
 ```
 
-## Others
+## OTHERS
 
 [Fail2Ban](./assets/mds/fail2ban.md)
 
