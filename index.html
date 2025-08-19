@@ -2,59 +2,117 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>JPB Gomes</title>
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-
+    <title>JPB Gomes — Full-Stack Developer (Laravel · Tailwind · React Native) — Porto, Portugal</title>
     <meta name="description"
-        content="Welcome to my portfolio! I am an enthusiastic developer passionate about leveraging technology to create innovative solutions that drive business success. My goal is to foster win-win situations, leaving a positive footprint in the world through collaboration and creativity.">
+        content="JPB Gomes — Full-Stack Web & Mobile Developer (Laravel, TailwindCSS, React Native). Porto-based developer building secure, scalable web apps, e-commerce, and APIs. Available for freelance & full-time roles. Contact: jpbgomesbusiness@gmail.com" />
+    <meta name="author" content="JPB Gomes" />
     <meta name="keywords"
-        content="developer, web developer, software engineer, IT, technology, PHP, JavaScript, HTML, CSS, programming, full-stack developer, UX/UI design, innovation, problem-solving">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://jpbgomes.com">
+        content="JPB Gomes, web developer, full-stack developer, Laravel developer, TailwindCSS, React Native, PHP developer, MariaDB, Porto developer, freelance developer, web apps, REST API, portfolio" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <!-- Meta Tags Open Graph -->
-    <meta property="og:title" content="JPB Gomes | Passionate Developer and Innovator">
+    <link rel="canonical" href="https://jpbgomes.com" />
+
+    <meta http-equiv="Content-Language" content="en" />
+    <link rel="alternate" hreflang="en" href="https://jpbgomes.com/" />
+    <link rel="alternate" hreflang="pt-PT" href="https://jpbgomes.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JPB Gomes — Full-Stack Developer (Laravel · Tailwind · React Native)" />
     <meta property="og:description"
-        content="Explore the portfolio of JPB Gomes, an enthusiastic developer dedicated to creating impactful solutions through technology. Discover innovative projects, problem-solving approaches, and a commitment to leaving a positive mark on the world.">
-    <meta property="og:image" content="https://jpbgomes.com/assets/favicon.ico">
-    <meta property="og:url" content="https://jpbgomes.com">
-    <meta property="og:type" content="website">
+        content="Portfolio of JPB Gomes — Porto-based full-stack developer building modern web & mobile apps using Laravel, TailwindCSS, React Native and MariaDB. Available for freelance & full-time roles." />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CFG8CDJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <meta property="og:image" content="https://jpbgomes.com/assets/logo.png" />
+    <meta property="og:image:alt" content="JPB Gomes — Full-Stack Developer" />
+    <meta property="og:url" content="https://jpbgomes.com" />
+    <meta property="og:site_name" content="JPB Gomes" />
+    <meta property="og:locale" content="en_US" />
 
-        function gtag() {
-            dataLayer.push(arguments);
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JPB Gomes — Full-Stack Developer (Laravel · Tailwind · React Native)" />
+    <meta name="twitter:description"
+        content="Porto-based developer building web & mobile apps. Laravel, Tailwind, React Native, MariaDB. Contact: jpbgomesbusiness@gmail.com" />
+    <meta name="twitter:image" content="https://jpbgomes.com/assets/logo.png" />
+
+    <meta name="twitter:site" content="@jpbgomes" />
+    <meta name="twitter:creator" content="@jpbgomes" />
+
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/assets/logo.png" />
+    <meta name="theme-color" content="#131312" />
+    <meta name="msapplication-TileColor" content="#131312" />
+    <meta name="msapplication-TileImage" content="/assets/logo.png" />
+
+    <link rel="me" href="https://github.com/jpbgomes" />
+    <link rel="me" href="https://www.linkedin.com/in/jpbgomes" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://jpbgomes.com/#person",
+        "name": "JPB Gomes",
+        "alternateName": "João Gomes",
+        "url": "https://jpbgomes.com",
+        "sameAs": [
+          "https://github.com/jpbgomes",
+          "https://www.linkedin.com/in/jpbgomes"
+        ],
+        "jobTitle": "Full-Stack Developer",
+        "description": "Full-Stack Web & Mobile Developer specializing in Laravel, TailwindCSS, React Native and MariaDB. Based in Porto, Portugal.",
+        "email": "mailto:jpbgomesbusiness@gmail.com",
+        "image": "https://jpbgomes.com/assets/profile.jpg",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "JPB Gomes"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Porto",
+          "addressCountry": "PT"
         }
-        gtag('js', new Date());
-        gtag('config', 'G-KQ7CFG8CDJ');
-    </script>
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jpbgomes.com/#website",
+        "url": "https://jpbgomes.com",
+        "name": "JPB Gomes — Portfolio",
+        "description": "JPB Gomes portfolio with projects using Laravel, TailwindCSS, React Native and MariaDB.",
+        "publisher": {
+          "@id": "https://jpbgomes.com/#person"
+        }
+      }
+    ]
+  }
+  </script>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KQ7CFG8CDJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-KQ7CFG8CDJ', { 'anonymize_ip': true });
+    </script>
 
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body id="body" class="font-sans antialiased bg-[#131312] px-5 md:px-0">
+<body class="font-sans antialiased bg-[#131312] px-5 md:px-0">
     <div class="w-full flex flex-col items-center justify-center overflow-y-visible pt-10">
         <div class="max-w-3xl w-full flex flex-col items-center">
             <p class="text-5xl text-center text-neutral-400">a <span class="text-white">developer</span> who works to
@@ -67,21 +125,15 @@
             <div class="flex flex-wrap items-center justify-center gap-5 mb-14">
                 <a target="_blank"
                     class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-[#1C1C1C] text-white rounded-xl text-sm"
-                    href="https://github.com/jpbgomes">
+                    href="https://github.com/jpbgomes" rel="noopener">
                     <img src="assets/socials/github.png" alt="" class="w-6 h-6">@jpbgomes
                 </a>
 
                 <a target="_blank"
                     class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-[#1C1C1C] text-white rounded-xl text-sm"
-                    href="https://www.linkedin.com/in/jpbgomes">
+                    href="https://www.linkedin.com/in/jpbgomes" rel="noopener">
                     <img src="assets/socials/linkedin.png" alt="" class="w-6 h-6">@jpbgomes
                 </a>
-
-                <!-- <a target="_blank"
-                        class="flex items-center justify-center transition-all hover:bg-neutral-800 px-2 py-1 gap-2 bg-[#1C1C1C] text-white rounded-xl text-sm"
-                        href="https://www.youtube.com/@jpbgomess">
-                        <img src="assets/socials/youtube.png" alt="" class="w-6 h-6">@jpbgomess
-                    </a> -->
             </div>
 
             <div class="w-full flex flex-col items-center gap-3">
@@ -102,7 +154,7 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://nortadadesabores.com" target="_blank">Learn More <i
+                            href="https://nortadadesabores.com" target="_blank" rel="noopener">Learn More <i
                                 class="fa-solid fa-utensils"></i></a>
                     </div>
                 </div>
@@ -124,7 +176,7 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://amaisterapia.com" target="_blank">Check It Out
+                            href="https://amaisterapia.com" target="_blank" rel="noopener">Check It Out
                             <i class="fa-solid fa-spa"></i></a>
                     </div>
                 </div>
@@ -146,7 +198,7 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://valongouro.pt" target="_blank">See Work
+                            href="https://valongouro.pt" target="_blank" rel="noopener">See Work
                             <i class="fa-solid fa-gem"></i></a>
                     </div>
                 </div>
@@ -168,7 +220,7 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://pinhoworks.pt" target="_blank">Navigate
+                            href="https://pinhoworks.pt" target="_blank" rel="noopener">Navigate
                             <i class="fa-solid fa-motorcycle"></i></a>
                     </div>
                 </div>
@@ -190,7 +242,7 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://norticolor.com" target="_blank">See Albuns
+                            href="https://norticolor.com" target="_blank" rel="noopener">See Albuns
                             <i class="fa-solid fa-camera"></i></a>
                     </div>
                 </div>
@@ -212,108 +264,29 @@
 
                     <div>
                         <a class="text-black px-3 text-md py-2 rounded-md hover:bg-gray-300 transition-all flex items-center gap-2 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            href="https://skypeople.pt" target="_blank">Explore Areas
+                            href="https://skypeople.pt" target="_blank" rel="noopener">Explore Areas
                             <i class="fa-solid fa-wifi"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="max-w-3xl w-full flex flex-col items-center mt-40">
-            <p class="text-5xl text-center text-neutral-400">my <span class="text-white">path</span> into the <span
-                    class="text-white">tech and business</span>
-                world.</p>
+        <!-- TIMELINE SECTION (dynamic) -->
+        <section id="timeline" class="max-w-3xl w-full flex flex-col items-center mt-40">
+            <p class="text-5xl text-center text-neutral-400">
+                my <span class="text-white">path</span> into the <span class="text-white">tech and business</span>
+                world.
+            </p>
 
-            <div class="flex justify-between items-center gap-4 sm:gap-10 h-[1820px] sm:h-[1720px] mt-20">
-                <div class="h-full w-full flex flex-col items-center justify-start gap-10">
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-40">
-                        <h2 class="text-start text-2xl text-white">Age 6</h2>
-                        <h1 class="text-start text-md text-neutral-200">First <strong>Interaction with a
-                                Computer</strong></h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-28">
-                        <h2 class="text-start text-2xl text-white">Age 14</h2>
-                        <h1 class="text-start text-md text-neutral-200">Started <strong>Programming in .Lua</strong> for
-                            FiveM</h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
-                        <p class="text-start text-2xl text-white">Age 16</h2>
-                        <h1 class="text-start text-md text-neutral-200">Joined a <strong>Programming-Focused High
-                                School Course</strong>
-                            in Portugal
-                        </h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
-                        <h2 class="text-start text-2xl text-white">Age 19</h2>
-                        <h1 class="text-start text-md text-neutral-200">Completed the Piscine/Bootcamp and start the
-                            Common Core Course at 42 Porto, <strong>while working as a full-stack in Flamingo</strong>
-                        </h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-40">
-                        <h2 class="text-start text-2xl text-white">Age 19</h2>
-                        <h1 class="text-start text-md text-neutral-200">Worked as driver,
-                            <strong>transporting tourists</strong> between the airport and their hotels.
-                        </h1>
-                    </div>
+            <div id="timeline-container" class="relative mt-10 w-full">
+                <!-- center vertical line (visible on md+) -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-neutral-700 -translate-x-1/2">
                 </div>
 
-                <div class="h-full border border-neutral-300 rounded-full"></div>
-
-                <div class="h-full w-full flex flex-col items-center justify-start gap-10">
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-40">
-                        <h2 class="text-start text-2xl text-white">Age 10</h2>
-                        <h1 class="text-start text-md text-neutral-200">Started a Bracelet Business at School
-                            <strong>(Ended by
-                                Principal)</strong>
-                        </h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-3 sm:gap-5 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-52 mt-32">
-                        <h2 class="text-start text-2xl text-white">Age 15</h2>
-                        <p class="text-start text-md text-neutral-200">Team project: Built, <strong>programmed, and
-                                launched</strong> a
-                            mini satellite (CanSat Junior).</p>
-                        <a href="https://www.esero.pt/592/Reveja-a-Final-da-1---edi--o-do-CanSat-Jr" target="_blank"
-                            class="flex items-center gap-2 px-3 py-1 border border-neutral-500 text-neutral-200 hover:bg-neutral-700 text-sm"
-                            aria-label="Learn more about the CanSat Junior project">Learn More</a>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-36">
-                        <h2 class="text-start text-2xl text-white">Age 18</h2>
-                        <h1 class="text-start text-md text-neutral-200">Graduated High School with <strong>Highest
-                                Distinction (20/20)</strong>
-                            (PAT)</h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-40">
-                        <h2 class="text-start text-2xl text-white">Age 19</h2>
-                        <h1 class="text-start text-md text-neutral-200">Worked as a valet and bell attendant at a 5 star
-                            hotel, <strong>Villa Foz Hotel & Spa</strong></h1>
-                    </div>
-
-                    <div
-                        class="w-full flex flex-col items-start justify-center gap-5 sm:gap-3 bg-neutral-800 p-3 sm:p-5 rounded-lg h-60 sm:h-40 mt-40">
-                        <h2 class="text-start text-2xl text-white">Age 19</h2>
-                        <h1 class="text-start text-md text-neutral-200">📍 Working as a pizza delivery driver for
-                            <strong>Domino´s while training for the army</strong>
-                        </h1>
-                    </div>
-                </div>
+                <!-- timeline items render here -->
+                <div id="timeline-items" class="flex flex-col"></div>
             </div>
-        </div>
+        </section>
 
         <div class="max-w-3xl w-full flex flex-col items-center mt-40">
             <p class="text-5xl text-center text-neutral-400">my <span class="text-white">secret formula </span>for <span
@@ -420,58 +393,149 @@
             <h1 class="text-white text-center capitalize italic">sic parvis magna - sir francis drake</h1>
         </div>
     </div>
+
+    <!-- TIMELINE SCRIPT -->
+    <script>
+        /*
+          Timeline builder
+          - Only edit the `timelineItems` array below to add/remove entries.
+          - Each item: { age, title, description, note (optional) }
+          - The script will alternate items left / right on md+ screens.
+        */
+        const timelineItems = [
+            { age: 6, title: "First Interaction with a Computer", description: "First curiosity and play with a family PC." },
+            { age: 10, title: "Started a Bracelet Business at School", description: "Small entrepreneur project (ended by the principal)." },
+            { age: 14, title: "Started Programming in .Lua for FiveM", description: "Began scripting and building small mods and game systems." },
+            { age: 15, title: "CanSat Junior — Team Project", description: "Built, programmed and launched a mini satellite.", note: "<a class='text-sm underline' href='https://www.esero.pt/592/Reveja-a-Final-da-1---edi--o-do-CanSat-Jr' target='_blank' rel='noopener'>Learn more</a>" },
+            { age: 16, title: "Programming-Focused High School Course", description: "Formal education in programming and computer science." },
+            { age: 18, title: "Graduated High School — Highest Distinction (20/20)", description: "Completed PAT with top marks." },
+            { age: 19, title: "Piscine/Bootcamp at 42 Porto & Full-stack at Flamingo", description: "Completed Piscine and joined 42 Porto while working as a full-stack developer." },
+
+            // split the three jobs into separate entries so they don't mix
+            { age: 19, title: "Driver — Transporting Tourists", description: "Worked as a driver transporting tourists between the airport and their hotels." },
+            { age: 19, title: "Valet & Bell Attendant — Villa Foz Hotel & Spa", description: "Worked as a valet and bell attendant at a 5-star hotel (Villa Foz)." },
+            { age: 19, title: "Pizza Delivery Driver — Domino's", description: "Working as a pizza delivery driver for Domino's while training for the army." }
+        ];
+
+        const container = document.getElementById('timeline-items');
+
+        timelineItems.forEach((item, idx) => {
+            const side = (idx % 2 === 0) ? 'left' : 'right';
+            const wrapper = document.createElement('div');
+
+            // make wrapper relative so the dot can be absolutely positioned centered
+            // keep layout as two columns on md+
+            wrapper.className = 'relative mb-8 md:mb-12 flex flex-col md:flex-row items-start';
+
+            // left placeholder and right placeholder to keep two-column layout consistent on md+
+            const leftHolder = document.createElement('div');
+            leftHolder.className = 'w-full md:w-1/2 md:px-4';
+
+            const rightHolder = document.createElement('div');
+            rightHolder.className = 'w-full md:w-1/2 md:px-4';
+
+            // Build content box
+            const contentBox = document.createElement('div');
+            contentBox.className = 'bg-neutral-800 p-4 rounded-lg shadow-sm';
+
+            const ageEl = document.createElement('h2');
+            ageEl.className = 'text-2xl text-white';
+            ageEl.innerText = `Age ${item.age}`;
+
+            const titleEl = document.createElement('h3');
+            titleEl.className = 'text-md text-neutral-200 mt-3 font-semibold';
+            titleEl.innerText = item.title;
+
+            const descEl = document.createElement('p');
+            descEl.className = 'text-neutral-400 mt-2';
+            descEl.innerText = item.description || '';
+
+            contentBox.appendChild(ageEl);
+            contentBox.appendChild(titleEl);
+            contentBox.appendChild(descEl);
+
+            if (item.note) {
+                const noteWrap = document.createElement('div');
+                noteWrap.className = 'mt-2 text-neutral-300';
+                noteWrap.innerHTML = item.note;
+                contentBox.appendChild(noteWrap);
+            }
+
+            // center dot element (positioned absolutely in the middle of the wrapper,
+            // so it sits exactly on the center vertical line).
+            // hidden on small screens
+            const centerDot = document.createElement('div');
+            centerDot.className = 'hidden md:block absolute left-1/2 top-6 transform -translate-x-1/2 z-10';
+            centerDot.innerHTML = `<span class="block w-4 h-4 rounded-full bg-white border-2 border-neutral-800 shadow"></span>`;
+
+            // place elements depending on side
+            if (side === 'left') {
+                leftHolder.appendChild(contentBox);
+            } else {
+                rightHolder.appendChild(contentBox);
+            }
+
+            // append leftHolder, rightHolder and dot — dot is absolute so it will be centered
+            wrapper.appendChild(leftHolder);
+            wrapper.appendChild(rightHolder);
+            wrapper.appendChild(centerDot);
+
+            container.appendChild(wrapper);
+        });
+    </script>
+
+    <!-- BOOKS / CARDS SCRIPT -->
+    <script>
+        readed = [
+            { name: "Hábitos Atómicos", image: "habits.jpg", author: "James Clear" },
+            { name: "A Arte Subtil De Saber Dizer Que Se Foda", image: "artsubtil.jpg", author: "Mark Manson" },
+            { name: "Como Fazer Amigos E Influenciar Pessoas", image: "howtofriends.jpg", author: "Dale Carnegie" },
+
+            { name: "12 Regras Para A Vida", image: "12rule.jpg", author: "Jordan B Peterson" },
+            { name: "As 33 Estratégias De Guerra", image: "33war.jpg", author: "Robert Greene" },
+            { name: "The 48 Laws Of Power", image: "48laws.jpg", author: "Robert Greene" },
+            { name: "Os Segredos Para Ler E Influenciar Pessoas", image: "secrectinfluence.jpg", author: "Alexandre Machado" },
+            { name: "O Alquimista", image: "thealchemist.jpg", author: "Paulo Coelho" },
+            { name: "Arsène Lupin - O Ladrão de Casaca", image: "lupin.jpg", author: "Maurice Leblane" },
+            { name: "Pai Rico Pai Pobre", image: "richdad.jpg", author: "Robert T. Kiyosaki" },
+            { name: "Pai Rico Pai Pobre - A Escola de Negócios", image: "richdadschool.jpg", author: "Robert T. Kiyosaki" },
+            { name: "O País Dos Cucos", image: "cucos.jpg", author: "Tom Burgis" },
+            { name: "The Psychology Of Money", image: "psychology.jpg", author: "Morgan Housel" },
+            { name: "Think And Grow Rich", image: "thinkandgrow.jpg", author: "Napoleon Hill" }
+        ]
+
+        going = [
+            { name: "Money Master The Game", image: "moneygame.jpg", author: "Tony Robbins" },
+            { name: "Can´t Hurt Me", image: "canthurtme.jpg", author: "David Goggins" },
+            { name: "Desperte O Gigante Que Há Em Sí", image: "giant.jpg", author: "Tony Robbins" }
+        ]
+
+        const booksReadContainer = document.getElementById("books-read-container");
+
+        readed.forEach(readBook => {
+            const card = document.createElement("div");
+            card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
+
+            card.innerHTML = `
+                <img src="assets/books/${readBook.image}" alt="${readBook.name}" class="w-full h-full rounded-md object-cover">
+            `;
+
+            booksReadContainer.appendChild(card);
+        });
+
+        const booksGoingContainer = document.getElementById("books-going-container");
+
+        going.forEach(goingBook => {
+            const card = document.createElement("div");
+            card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
+
+            card.innerHTML = `
+                <img src="assets/books/${goingBook.image}" alt="${goingBook.name}" class="w-full h-full rounded-md object-cover">
+            `;
+
+            booksGoingContainer.appendChild(card);
+        });
+    </script>
 </body>
-
-<script>
-    readed = [
-        { name: "Hábitos Atómicos", image: "habits.jpg", author: "James Clear" },
-        { name: "A Arte Subtil De Saber Dizer Que Se Foda", image: "artsubtil.jpg", author: "Mark Manson" },
-        { name: "Como Fazer Amigos E Influenciar Pessoas", image: "howtofriends.jpg", author: "Dale Carnegie" },
-
-        { name: "12 Regras Para A Vida", image: "12rule.jpg", author: "Jordan B Peterson" },
-        { name: "As 33 Estratégias De Guerra", image: "33war.jpg", author: "Robert Greene" },
-        { name: "The 48 Laws Of Power", image: "48laws.jpg", author: "Robert Greene" },
-        { name: "Os Segredos Para Ler E Influenciar Pessoas", image: "secrectinfluence.jpg", author: "Alexandre Machado" },
-        { name: "O Alquimista", image: "thealchemist.jpg", author: "Paulo Coelho" },
-        { name: "Arsène Lupin - O Ladrão de Casaca", image: "lupin.jpg", author: "Maurice Leblane" },
-        { name: "Pai Rico Pai Pobre", image: "richdad.jpg", author: "Robert T. Kiyosaki" },
-        { name: "Pai Rico Pai Pobre - A Escola de Negócios", image: "richdadschool.jpg", author: "Robert T. Kiyosaki" },
-        { name: "O País Dos Cucos", image: "cucos.jpg", author: "Tom Burgis" },
-        { name: "The Psychology Of Money", image: "psychology.jpg", author: "Morgan Housel" },
-        { name: "Think And Grow Rich", image: "thinkandgrow.jpg", author: "Napoleon Hill" }
-    ]
-
-    going = [
-        { name: "Money Master The Game", image: "moneygame.jpg", author: "Tony Robbins" },
-        { name: "Can´t Hurt Me", image: "canthurtme.jpg", author: "David Goggins" },
-        { name: "Desperte O Gigante Que Há Em Sí", image: "giant.jpg", author: "Tony Robbins" }
-    ]
-
-    const booksReadContainer = document.getElementById("books-read-container");
-
-    readed.forEach(readBook => {
-        const card = document.createElement("div");
-        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
-
-        card.innerHTML = `
-            <img src="assets/books/${readBook.image}" alt="${readBook.name}" class="w-full h-full rounded-md object-cover">
-        `;
-
-        booksReadContainer.appendChild(card);
-    });
-
-    const booksGoingContainer = document.getElementById("books-going-container");
-
-    going.forEach(goingBook => {
-        const card = document.createElement("div");
-        card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
-
-        card.innerHTML = `
-            <img src="assets/books/${goingBook.image}" alt="${goingBook.name}" class="w-full h-full rounded-md object-cover">
-        `;
-
-        booksGoingContainer.appendChild(card);
-    });
-</script>
 
 </html>
