@@ -137,8 +137,12 @@ lspi
 
 ## OTHERS
 
+[Apache](./assets/mds/apache.md)
+
 [Fail2Ban](./assets/mds/fail2ban.md)
 
 [MariaDB](./assets/mds/mariadb.md)
+
+[Tor](./assets/mds/tor.md)
 
 [VaultWarden](./assets/mds/vaultwarden.md)
