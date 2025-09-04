@@ -135,6 +135,11 @@ source ~/.bashrc
 lspi
 ```
 
+# SUDO CRONTAB FOR UPDATING AND UPGRADING
+```bash
+0 4 * * * sudo apt update -y && sudo apt upgrade -y >> /var/log/apt-upgrade.log 2>&1
+```
+
 ## OTHERS
 
 [Apache](./assets/mds/apache.md)
