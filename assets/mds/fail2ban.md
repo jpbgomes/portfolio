@@ -26,6 +26,11 @@ logpath = %(sshd_log)s
 backend = systemd
 ```
 
+```
+[DEFAULT]
+ignoreip = 127.0.0.1/8 192.168.0.0/24
+```
+
 ```bash
 sudo systemctl restart fail2ban
 ```
