@@ -142,6 +142,8 @@ lspi
 
 ## OTHERS
 
+[UFW](./assets/mds/ufw.md)
+
 [Apache](./assets/mds/apache.md)
 
 [Fail2Ban](./assets/mds/fail2ban.md)
@@ -151,3 +153,5 @@ lspi
 [Tor](./assets/mds/tor.md)
 
 [VaultWarden](./assets/mds/vaultwarden.md)
+
+[Pihole](./assets/mds/pihole.md)

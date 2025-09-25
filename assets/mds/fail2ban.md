@@ -12,7 +12,7 @@ sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 sudo nano /etc/fail2ban/jail.local
 ```
 
-```
+```bash
 [sshd]
 
 # To use more aggressive sshd modes set filter parameter "mode" in jail.local:

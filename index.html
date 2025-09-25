@@ -230,12 +230,23 @@
             </div>
         </div>
 
-        <div class="max-w-3xl w-full flex flex-col items-center mt-40">
+        <div id="readingContainer" class="max-w-3xl w-full flex flex-col items-center mt-40">
             <p class="text-5xl text-center text-neutral-400">Books <span class="text-white">I´m Reading</span>
             </p>
 
             <div class="flex flex-col justify-between items-start gap-10 mt-20">
                 <div id="books-going-container" class="w-full flex flex-wrap gap-8 text-white justify-center">
+                    <!-- Book cards will be injected here -->
+                </div>
+            </div>
+        </div>
+
+        <div id="futureContainer" class="max-w-3xl w-full flex flex-col items-center mt-40">
+            <p class="text-5xl text-center text-neutral-400">Books <span class="text-white">I Want to Read</span>
+            </p>
+
+            <div class="flex flex-col justify-between items-start gap-10 mt-20">
+                <div id="books-future-container" class="w-full flex flex-wrap gap-8 text-white justify-center">
                     <!-- Book cards will be injected here -->
                 </div>
             </div>
@@ -438,12 +449,22 @@
         ]
 
         going = [
+
+        ]
+
+        future = [
             { name: "Money Master The Game", image: "moneygame.jpg", author: "Tony Robbins" },
             { name: "Desperte O Gigante Que Há Em Sí", image: "giant.jpg", author: "Tony Robbins" },
+            { name: "The Psychology Of Winning", image: "thepsychologyofwinning.jpg", author: "Dr Denis Waitley" },
+            { name: "O Mapa da Independencia Financeira: 7 Principios para uma vida mais prospera", image: "7stepsfinance.jpg", author: "Paulo de Vilhena" },
+            { name: "The Dip: The extraordinary benefits of knowing when to quit (and when to stick)", image: "thedip.jpg", author: "Seth Godin" },
+            { name: "Strategic Relocation", image: "relocation.jpg", author: "Joel Skousen" },
+            { name: "O Investidor Inteligente", image: "investidorinteligente.jpg", author: "Benjamin Graham" },
+            { name: "Lone Survivor", image: "lonesurvivor.webp", author: "Marcus Luttrell" },
+            { name: "No Easy Day", image: "noeasyday.jpg", author: "Mark Owen" },
         ]
 
         const booksReadContainer = document.getElementById("books-read-container");
-
         readed.forEach(readBook => {
             const card = document.createElement("div");
             card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
@@ -455,18 +476,39 @@
             booksReadContainer.appendChild(card);
         });
 
-        const booksGoingContainer = document.getElementById("books-going-container");
+        const readingContainer = document.getElementById("readingContainer");
+        if (going.length > 0) {
+            const booksGoingContainer = document.getElementById("books-going-container");
+            going.forEach(goingBook => {
+                const card = document.createElement("div");
+                card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
 
-        going.forEach(goingBook => {
-            const card = document.createElement("div");
-            card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
-
-            card.innerHTML = `
+                card.innerHTML = `
                 <img src="assets/books/${goingBook.image}" alt="${goingBook.name}" class="w-full h-full rounded-md object-cover">
+                `;
+
+                booksGoingContainer.appendChild(card);
+            });
+        } else {
+            readingContainer.classList.add("hidden");
+        }
+
+        const futureContainer = document.getElementById("futureContainer");
+        if (future.length > 0) {
+            const booksFutureContainer = document.getElementById("books-future-container");
+            future.forEach(futureBook => {
+                const card = document.createElement("div");
+                card.className = "hover:scale-110 transition duration-300 ease-in-out bg-neutral-800 w-36 sm:w-44 flex flex-col items-center justify-start gap-4 p-2 rounded-xl";
+
+                card.innerHTML = `
+                <img src="assets/books/${futureBook.image}" alt="${futureBook.name}" class="w-full h-full rounded-md object-cover">
             `;
 
-            booksGoingContainer.appendChild(card);
-        });
+                booksFutureContainer.appendChild(card);
+            });
+        } else {
+            futureContainer.classList.add("hidden");
+        }
     </script>
 </body>
 
