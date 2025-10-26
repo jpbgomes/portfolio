@@ -144,7 +144,7 @@ lspi
 
 [APACHE](./assets/mds/apache.md)
 
-[Fail2Ban](./assets/mds/fail2ban.md)
+[FAIL2BAN](./assets/mds/fail2ban.md)
 
 [GITHUB](./assets/mds/github.md)
 
