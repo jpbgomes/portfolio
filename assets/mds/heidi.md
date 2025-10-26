@@ -41,61 +41,8 @@ sudo mysql -u root
 
 Then inside MariaDB:
 ```sql
-CREATE USER 'dev'@'%' IDENTIFIED BY 'YLiQ~X4qw,Mar-yv';
+CREATE USER 'dev'@'%' IDENTIFIED BY 'your_password';
 GRANT ALL PRIVILEGES ON *.* TO 'dev'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 ```
-
----
-
-### 4️⃣ HeidiSQL Connection Settings
-
-| Field | Value |
-|-------|-------|
-| Network type | MariaDB or MySQL (TCP/IP) |
-| Hostname / IP | Your server LAN or public IP |
-| Port | 3306 |
-| User | dev |
-| Password | (your password above) |
-
----
-
-## 🔒 Security Notes (Important!)
-
-Restrict user to only local network (much safer):
-```sql
-CREATE USER 'dev'@'192.168.1.%' IDENTIFIED BY 'YourStrongPassword';
-GRANT ALL PRIVILEGES ON *.* TO 'dev'@'192.168.1.%';
-FLUSH PRIVILEGES;
-```
-
-Restrict to singletrusted IP:
-```sql
-CREATE USER 'dev'@'YOUR_PC_IP' IDENTIFIED BY 'YourStrongPassword';
-GRANT ALL PRIVILEGES ON *.* TO 'dev'@'YOUR_PC_IP';
-FLUSH PRIVILEGES;
-```
-
----
-
-## ✅ Optional: SSH Tunnel Method (Best Practice)
-
-Keep port 3306 closed to internet — allow HeidiSQL using SSH tunnel:
-
-```bash
-ssh -L 3307:localhost:3306 youruser@your.server.ip
-```
-
-Then in HeidiSQL:
-```
-Host: 127.0.0.1
-Port: 3307
-User: dev
-Password: your password
-```
-
-No firewall changes needed 👍
-
----
-
