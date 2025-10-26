@@ -142,16 +142,24 @@ lspi
 
 ## OTHERS
 
-[UFW](./assets/mds/ufw.md)
-
 [Apache](./assets/mds/apache.md)
 
 [Fail2Ban](./assets/mds/fail2ban.md)
 
+[GITHUB](./assets/mds/github.md)
+
+[HEIDI](./assets/mds/heidi.md)
+
+[LARAVEL](./assets/mds/laravel.md)
+
 [MariaDB](./assets/mds/mariadb.md)
 
-[Tor](./assets/mds/tor.md)
+[MINECRAFT](./assets/mds/minecraft.md)
 
-[VaultWarden](./assets/mds/vaultwarden.md)
+[PIHOLE](./assets/mds/pihole.md)
 
-[Pihole](./assets/mds/pihole.md)
+[TOR](./assets/mds/tor.md)
+
+[UFW](./assets/mds/ufw.md)
+
+[VAULTWARDEN](./assets/mds/vaultwarden.md)
