@@ -142,7 +142,7 @@ lspi
 
 ## OTHERS
 
-[Apache](./assets/mds/apache.md)
+[APACHE](./assets/mds/apache.md)
 
 [Fail2Ban](./assets/mds/fail2ban.md)
 
@@ -152,7 +152,7 @@ lspi
 
 [LARAVEL](./assets/mds/laravel.md)
 
-[MariaDB](./assets/mds/mariadb.md)
+[MARIADB](./assets/mds/mariadb.md)
 
 [MINECRAFT](./assets/mds/minecraft.md)
 
